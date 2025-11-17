@@ -75,9 +75,10 @@
 	
 	define("baslik", $ayar["site_baslik"]);
 	define("url", $ayar["site_url"]);
-	define("tema_dir", $ayar["site_tema"]);
-	define("tema","tema/".$ayar["site_tema"]);
-	define("tema_url", $ayar["site_url"]."tema/".$ayar["site_tema"]);	
+	// TEMA ZORLAMA: Yönetim panelindeki ayar yerine 'kurumsal' tema doğrudan aktif ediliyor.
+	define("tema_dir", "kurumsal");
+	define("tema","tema/kurumsal");
+	define("tema_url", $ayar["site_url"]."tema/kurumsal");
 	define("logo", $ayar["firma_logo"]);
 	define("watermark", $ayar["watermark"]);
 	define("footerlogo", $ayar["firma_footerlogo"]);
