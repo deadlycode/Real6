@@ -1,0 +1,57 @@
+RewriteEngine on
+ErrorDocument 404 /404.html
+RewriteRule ^([a-zA-Z0-9\-_]+).html$ index.php?sayfa=$1 [L,QSA]
+RewriteRule ^([a-zA-Z0-9\-_]+)(/?)$ index.php?sayfa=$1 [L,QSA]
+RewriteRule ^icerik/(.*).html$ index.php?sayfa=icerik&id=$1 [L,QSA]
+RewriteRule ^icerik/(.*?)$ index.php?sayfa=icerik&id=$1 [L,QSA]
+RewriteRule ^ekip/(.*).html$ index.php?sayfa=ekip&id=$1 [L,QSA]
+RewriteRule ^ekip/(.*?)$ index.php?sayfa=ekip&id=$1 [L,QSA]
+RewriteRule ^haberdetay/(.*).html$ index.php?sayfa=haberdetay&id=$1 [L,QSA]
+RewriteRule ^haberdetay/(.*?)$ index.php?sayfa=haberdetay&id=$1 [L,QSA]
+RewriteRule ^referans/(.*).html$ index.php?sayfa=referans&id=$1 [L,QSA]
+RewriteRule ^referans/(.*?)$ index.php?sayfa=referans&id=$1 [L,QSA]
+RewriteRule ^referanslar/(.*).html$ index.php?sayfa=referanslar&s=$1 [L,QSA]
+RewriteRule ^referanslar/(.*?)$ index.php?sayfa=referanslar&s=$1 [L,QSA]
+RewriteRule ^belgelerimiz/(.*).html$ index.php?sayfa=belgelerimiz&s=$1 [L,QSA]
+RewriteRule ^belgelerimiz/(.*?)$ index.php?sayfa=belgelerimiz&s=$1 [L,QSA]
+RewriteRule ^e-katalog/(.*).html$ index.php?sayfa=e-katalog&s=$1 [L,QSA]
+RewriteRule ^e-katalog/(.*?)$ index.php?sayfa=e-katalog&s=$1 [L,QSA]
+RewriteRule ^ekibimiz/(.*).html$ index.php?sayfa=ekibimiz&s=$1 [L,QSA]
+RewriteRule ^ekibimiz/(.*?)$ index.php?sayfa=ekibimiz&s=$1 [L,QSA]
+RewriteRule ^hizmetler/(.*).html$ index.php?sayfa=hizmetler&s=$1 [L,QSA]
+RewriteRule ^hizmetler/(.*?)$ index.php?sayfa=hizmetler&s=$1 [L,QSA]
+RewriteRule ^hizmet/(.*).html$ index.php?sayfa=hizmet&id=$1 [L,QSA]
+RewriteRule ^hizmet/(.*?)$ index.php?sayfa=hizmet&id=$1 [L,QSA]
+RewriteRule ^musteri-gorusleri/(.*).html$ index.php?sayfa=musteri-gorusleri&s=$1 [L,QSA]
+RewriteRule ^musteri-gorusleri/(.*?)$ index.php?sayfa=musteri-gorusleri&s=$1 [L,QSA]
+RewriteRule ^haberler/(.*).html$ index.php?sayfa=haberler&s=$1 [L,QSA]
+RewriteRule ^haberler/(.*?)$ index.php?sayfa=haberler&s=$1 [L,QSA]
+RewriteRule ^ilan/(.*).html$ index.php?sayfa=ilan&id=$1 [L,QSA]
+RewriteRule ^ilan/(.*?)$ index.php?sayfa=ilan&id=$1 [L,QSA]
+RewriteRule ^ilanlar/(.*).html$ index.php?sayfa=ilanlar&s=$1 [L,QSA]
+RewriteRule ^ilanlar/(.*?)$ index.php?sayfa=ilanlar&s=$1 [L,QSA]
+RewriteRule ^kategori/(.*).html$ index.php?sayfa=kategori&id=$1 [L,QSA]
+RewriteRule ^kategori/(.*?)$ index.php?sayfa=kategori&id=$1 [L,QSA]
+RewriteRule ^kategori-(.*)/(.*).html$ index.php?sayfa=kategori&id=$1&s=$2 [L,QSA]
+RewriteRule ^kategori-(.*?)/(.*?)$ index.php?sayfa=kategori&id=$1&s=$2 [L,QSA]
+RewriteRule ^proje/(.*).html$ index.php?sayfa=proje&id=$1 [L,QSA]
+RewriteRule ^proje/(.*?)$ index.php?sayfa=proje&id=$1 [L,QSA]
+RewriteRule ^proje-kategori/(.*).html$ index.php?sayfa=proje-kategori&id=$1 [L,QSA]
+RewriteRule ^proje-kategori/(.*?)$ index.php?sayfa=proje-kategori&id=$1 [L,QSA]
+RewriteRule ^proje-kategori-(.*)/(.*).html$ index.php?sayfa=proje-kategori&id=$1&s=$2 [L,QSA]
+RewriteRule ^proje-kategori-(.*?)/(.*?)$ index.php?sayfa=proje-kategori&id=$1&s=$2 [L,QSA]
+RewriteRule ^projeler/(.*).html$ index.php?sayfa=projeler&s=$1 [L,QSA]
+RewriteRule ^projeler/(.*?)$ index.php?sayfa=projeler&s=$1 [L,QSA]
+RewriteRule ^sitemap.xml$ sitemap.php [NC,L] 
+RewriteRule ^ilan-ekle/(.*).html$ index.php?sayfa=ilan-ekle&islem=duzenle&id=$1 [L,QSA]
+RewriteRule ^ilan-ekle/(.*?)$ index.php?sayfa=ilan-ekle&islem=duzenle&id=$1 [L,QSA]
+
+
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# “ea-php72” paketini varsayılan “PHP” programlama dili olarak ayarlayın.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php72 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
+#N-U-L-L-S-E-C-U-R-I-T-Y-F-O-R-U-M
